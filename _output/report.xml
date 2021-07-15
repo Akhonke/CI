@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="acceptance" tests="9" assertions="22" errors="0" failures="0" skipped="0" time="1.989263">
+    <testcase file="D:\wamp64\www\tests\acceptance\AssessorCest.php" name="tryToTest" class="AssessorCest" feature="try to test" assertions="3" time="0.340694"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\ExternalModeratorCest.php" name="tryToTest" class="ExternalModeratorCest" feature="try to test" assertions="3" time="0.249511"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\FaicilitatorCest.php" name="tryToTest" class="FaicilitatorCest" feature="try to test" assertions="3" time="0.272185"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\FirstCest.php" name="frontpageWorks" class="FirstCest" feature="frontpage works" assertions="1" time="0.055481"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\InternalModeratorCest.php" name="tryToTest" class="InternalModeratorCest" feature="try to test" assertions="3" time="0.263048"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\LearnerCest.php" name="tryToTest" class="LearnerCest" feature="try to test" assertions="3" time="0.252255"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\ManagerCest.php" name="tryToTest" class="ManagerCest" feature="try to test" assertions="3" time="0.285567"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\OrganizationCest.php" name="tryToTest" class="OrganizationCest" feature="try to test" assertions="0" time="0.000046"/>
+    <testcase file="D:\wamp64\www\tests\acceptance\TrainingCest.php" name="tryToTest" class="TrainingCest" feature="try to test" assertions="3" time="0.270477"/>
+  </testsuite>
+</testsuites>

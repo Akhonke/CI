@@ -1,0 +1,1910 @@
+	 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Digilims | Faciltator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- <link rel="shortcut icon" type="image/png" href="http://localhost/digilims/assets/admin/img/logo.png" /> -->
+    <link href="http://localhost/digilims/assets/admin/cloudfront/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="http://localhost/digilims/assets/admin/fontawesome/all.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Poppins:300,400,800"><link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet"><link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"><link href="http://localhost/digilims/assets/admin/cloudfront/css/orionicons.css" rel="stylesheet" type="text/css"><link href="http://localhost/digilims/assets/admin/cloudfront/css/style.default.css" id="theme-stylesheet" rel="stylesheet" type="text/css"><link href="http://localhost/digilims/assets/admin/cloudfront/css/custom.css" rel="stylesheet" type="text/css"><link href="http://localhost/digilims/assets/admin/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"><link href="http://localhost/digilims/assets/validation/css/screen.css" rel="stylesheet" type="text/css"><link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"><link href="http://localhost/digilims/assets/admin/cloudfront/css/style.default.css" id="theme-stylesheet" rel="stylesheet" type="text/css"><link href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.bootstrap4.min.css" id="theme-stylesheet" rel="stylesheet" type="text/css">    <script>
+        var message = '';
+    </script>
+</head>
+
+<body>
+    <header class="header">
+    <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow">
+        <a  href="javascript:;" class="navbar-brand font-weight-bold text-uppercase text-base">
+    <img src="http://localhost/digilims/assets/images/logo1.png" width="60%"></a>
+        <ul class="ml-auto d-flex align-items-center list-unstyled mb-0">
+            <!-- <li class="nav-item">
+                <form id="searchForm" class="ml-auto d-none d-lg-block">
+                    <div class="form-group position-relative mb-0">
+                        <button type="submit" style="top: -3px; left: 0;"
+                            class="position-absolute bg-white border-0 p-0"><i
+                                class="o-search-magnify-1 text-gray text-lg"></i></button>
+                        <input type="search" placeholder="Search ..."
+                            class="form-control form-control-sm border-0 no-shadow pl-4">
+                    </div>
+                </form>
+            </li> -->
+            <!-- <li class="nav-item dropdown mr-3"><a id="notifications" href="javascript:;" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle text-gray-400 px-1"><i
+                        class="fa fa-bell"></i><span class="notification-icon"></span></a>
+                <div aria-labelledby="notifications" class="dropdown-menu"><a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <div class="icon icon-sm bg-violet text-white"><i class="fab fa-twitter"></i></div>
+                            <div class="text ml-2">
+                                <p class="mb-0">You have 2 followers</p>
+                            </div>
+                        </div>
+                    </a><a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <div class="icon icon-sm bg-green text-white"><i class="fas fa-envelope"></i></div>
+                            <div class="text ml-2">
+                                <p class="mb-0">You have 6 new messages</p>
+                            </div>
+                        </div>
+                    </a><a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <div class="icon icon-sm bg-blue text-white"><i class="fas fa-upload"></i></div>
+                            <div class="text ml-2">
+                                <p class="mb-0">Server rebooted</p>
+                            </div>
+                        </div>
+                    </a><a href="#" class="dropdown-item">
+                        <div class="d-flex align-items-center">
+                            <div class="icon icon-sm bg-violet text-white"><i class="fab fa-twitter"></i></div>
+                            <div class="text ml-2">
+                                <p class="mb-0">You have 2 followers</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div><a href="#" class="dropdown-item text-center"><small
+                            class="font-weight-bold headings-font-family text-uppercase">View all
+                            notifications</small></a>
+                </div>
+            </li> -->
+                        <li class="nav-item dropdown ml-auto"><a id="userInfo" href="javascript:;" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><img
+                        src="http://localhost/digilims/uploads/facilitator/profile_image/" alt="Jason Doe" style="max-width: 2.5rem;"
+                        class="img-fluid rounded-circle shadow"></a>
+                <div aria-labelledby="userInfo" class="dropdown-menu"><a href="#" class="dropdown-item"><strong
+                            class="d-block text-uppercase headings-font-family">Slash Technology Facilitator</strong><small></small></a>
+                    <div class="dropdown-divider"></div><a href="http://localhost/digilims/Faciltator-changepassword" class="dropdown-item">Change Password</a>
+                    <div class="dropdown-divider"></div><a href="http://localhost/digilims/Faciltator-editprofile" class="dropdown-item">Edit Profile</a>
+                    <!-- <div class="dropdown-divider"></div><a href="#" class="dropdown-item">Settings</a> -->
+                    <!-- <a href="#"
+                        class="dropdown-item">Activity log </a> -->
+                    <div class="dropdown-divider"></div><a href="Faciltator-logout" class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>    <div class="d-flex align-items-stretch">
+        <div id="sidebar" class="sidebar py-3">
+
+   <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">Slash Technology Facilitator</div>
+   <ul class="sidebar-menu list-unstyled">
+      
+      <li class="sidebar-list-item"><a href="http://localhost/digilims/Faciltator-dashboard" title="From Here You Can See Dashboard" class="sidebar-link text-white active"><i class="o-home-1 mr-3 text-gray"></i><span>Dashboard</span></a></li>
+      
+      <li class="sidebar-list-item">
+         <a href="#" data-toggle="collapse" title="From Here You Can See Manage Marksheet" data-target="#pages14" aria-expanded="false" aria-controls="pages14" class="sidebar-link text-white">
+         <i class="o-wireframe-1 mr-3 text-gray"></i><span>Mark Sheet</span></a>
+         <div id="pages14" class="collapse">
+            <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+               <li class="sidebar-list-item"><a href="http://localhost/digilims/Faciltator-create-mark-sheet" title="From Here You Can Create Mark Sheet" class="sidebar-link text-white pl-lg-5">Create Mark Sheet</a></li>
+               <li class="sidebar-list-item"><a href="http://localhost/digilims/Faciltator-mark-sheet-list" title="From Here You Can See MarksheetList" class="sidebar-link text-white pl-lg-5">Mark Sheet List</a></li>
+            </ul>
+         </div>
+      </li>
+      
+      <li class="sidebar-list-item">
+         <a href="#" data-toggle="collapse" data-target="#pages5" title="From Here You Can Manage Attendance" aria-expanded="false" aria-controls="pages5" class="sidebar-link text-white">
+         <i class="o-code-window-1 mr-3 text-gray"></i><span>Manage Attendance</span></a>
+         <div id="pages5" class="collapse">
+            <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+                <li class="sidebar-list-item">
+                     
+                     <a href="http://localhost/digilims/facilitator-create-attendance" title="From Here You Can Create Attendance" class="sidebar-link text-white pl-lg-5">Create Attendance</a>
+                      
+                </li>
+                <li class="sidebar-list-item">
+                     
+                     <a href="http://localhost/digilims/facilitator-attendance-list" title="From Here You Can See Attendance List" class="sidebar-link text-white pl-lg-5">Attendence List</a>
+                      
+                </li>
+            </ul>
+         </div>
+      </li>
+      
+      <li class="sidebar-list-item">
+         <a href="#" data-toggle="collapse" data-target="#pages4" title="From Here You Can Manage Learner Discipline" aria-expanded="false" aria-controls="pages4" class="sidebar-link text-white">
+         <i class="o-wireframe-1 mr-3 text-gray"></i><span>Learner Discipline</span></a>
+         <div id="pages4" class="collapse">
+            <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+               <li class="sidebar-list-item"><a href="http://localhost/digilims/facilitator-create-discipline"  title="From Here You Can Add Issue" class="sidebar-link text-white pl-lg-5">New Issue</a></li>
+               <li class="sidebar-list-item"><a href="http://localhost/digilims/facilitator-discipline-list"  title="From Here You Can See Issue List" class="sidebar-link text-white pl-lg-5">Issues List</a></li>
+            </ul>
+         </div>
+      </li>
+
+
+      <li class="sidebar-list-item">
+         <a href="#" data-toggle="collapse"  title="From Here You Can Manage Messages" data-target="#pages544" aria-expanded="false" aria-controls="pages544" class="sidebar-link text-white">
+         <i class="o-wireframe-1 mr-3 text-gray"></i><span>Messages</span></a>
+         <div id="pages544" class="collapse">
+            <ul class="sidebar-menu list-unstyled border-left border-primary border-thick">
+               <li class="sidebar-list-item"><a href="http://localhost/digilims/Faciltator-sendMassage" title="From Here You Can Compose Messages" class="sidebar-link text-white pl-lg-5">Compose Message</a></li>
+               <li class="sidebar-list-item"><a href="http://localhost/digilims/Faciltator-inbox" title="From Here You Can See Inbox Messages" class="sidebar-link text-white pl-lg-5">Inbox</a></li>
+               <li class="sidebar-list-item"><a href="http://localhost/digilims/Faciltator-sentbox" title="From Here You Can See Sent Messages" class="sidebar-link text-white pl-lg-5">Sent Box</a></li>
+            </ul>
+         </div>
+      </li>
+   
+   </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script type="text/javascript">
+    function subscriptionMessage()
+    {
+       Swal.fire({
+                  title: 'Membership Required ',
+                  text: "A membership required to use these features. Just go explore membership and subscribe and use features.",
+                  icon: 'error',
+                  showCancelButton: true,
+                  cancelButtonColor: '#d33',
+                  confirmButtonColor: '#3085d6',
+                  confirmButtonText: 'Explore Membership'
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                   window.location.replace("http://localhost/digilims/");
+                  }
+                })
+    }
+</script>        <div class="page-holder w-100 d-flex flex-wrap">
+            <div class="container-fluid px-xl-5">
+
+    <section class="py-5">
+
+        <div class="row">
+
+            <!-- Form Elements -->
+
+            <div class="col-lg-12 mb-1">
+
+                <div class="card">
+
+                    <div class="card-header">
+
+                        <h3 class="h6 text-uppercase mb-0">Attendance List</h3>
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <table class="table table-bordered table-striped table-responsive" style="width:100%">
+
+                            <thead> 
+
+                                <tr>
+
+                                    <th>Serial No.</th>
+
+                                    <th>Training Provider</th>
+
+                                    <th>Learnership Sub Type</th>
+
+                                    <th>ClassName</th>
+
+                                    <th>Facilitator</th>
+
+                                    <th>Week Start Date </th>
+
+                                    <th>Week Ending Date</th>
+
+                                    <th>Attendance Sheet</th>
+
+                                    <th>Action</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                
+                                <tr id="del-31" class="filters">
+
+                                    <td>1</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>Food</td>
+
+                                    <td>Introduction to Food and Beverages</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-03-01</td>
+
+                                    <td>2021-03-05</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/283f4c75c969ab15e1f9fd6a96f8a91e.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="31" data-name="31" onclick="view(31)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=31" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',31)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-30" class="filters">
+
+                                    <td>2</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>Food</td>
+
+                                    <td>Introduction to Food and Beverages</td>
+
+                                    <td></td>
+
+                                    <td>2021-03-01</td>
+
+                                    <td>2021-03-07</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/94c36d4f67bef1f08c9fa36b200716b6.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="30" data-name="30" onclick="view(30)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=30" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',30)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-29" class="filters">
+
+                                    <td>3</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td></td>
+
+                                    <td>2021-02-04</td>
+
+                                    <td>2021-02-05</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/e128d9287f0e2df6f9dfb6840924dca5.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="29" data-name="29" onclick="view(29)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=29" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',29)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-28" class="filters">
+
+                                    <td>4</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td></td>
+
+                                    <td>2021-02-04</td>
+
+                                    <td>2021-02-05</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/eff0df80614978abb43da9d651921cd0.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="28" data-name="28" onclick="view(28)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=28" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',28)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-27" class="filters">
+
+                                    <td>5</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-02-19</td>
+
+                                    <td>2021-02-24</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/c7dac05d1386586765b6c9e4949f76df.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="27" data-name="27" onclick="view(27)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=27" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',27)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-26" class="filters">
+
+                                    <td>6</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>7th class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-02-17</td>
+
+                                    <td>2021-02-12</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/a4c0640ee8b8ff4b5c0519794a6de91d.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="26" data-name="26" onclick="view(26)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=26" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',26)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-25" class="filters">
+
+                                    <td>7</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>8th class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-02-12</td>
+
+                                    <td>2021-02-19</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/776c4c26c3d3ab440d126cd952309f83.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="25" data-name="25" onclick="view(25)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=25" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',25)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-24" class="filters">
+
+                                    <td>8</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>8th class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-02-19</td>
+
+                                    <td>2021-02-27</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/04a372155a8f7ee1c7ac4e2425c0b1b1.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="24" data-name="24" onclick="view(24)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=24" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',24)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-23" class="filters">
+
+                                    <td>9</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td></td>
+
+                                    <td>2021-02-17</td>
+
+                                    <td>2021-02-18</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/92c67d90f541b8695b828adf43946859.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="23" data-name="23" onclick="view(23)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=23" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',23)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-22" class="filters">
+
+                                    <td>10</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>8th class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-02-02</td>
+
+                                    <td>2021-02-03</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/011ec9dcd77b7472bd814fd1bbd97ea0.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="22" data-name="22" onclick="view(22)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=22" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',22)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-21" class="filters">
+
+                                    <td>11</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>8th class</td>
+
+                                    <td></td>
+
+                                    <td>2021-02-03</td>
+
+                                    <td>2021-02-04</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/854025f64ce80e8627e6dbd78ab5d1ed.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="21" data-name="21" onclick="view(21)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=21" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',21)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-20" class="filters">
+
+                                    <td>12</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td></td>
+
+                                    <td>8th class</td>
+
+                                    <td></td>
+
+                                    <td>2021-02-02</td>
+
+                                    <td>2021-02-03</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/945b0909b8135c60d383bff268fdf1f0.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="20" data-name="20" onclick="view(20)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=20" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',20)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-19" class="filters">
+
+                                    <td>13</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-01-29</td>
+
+                                    <td>2021-02-05</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/0113ba30f22b51a9ab1f3f680759cc4a.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="19" data-name="19" onclick="view(19)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=19" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',19)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-18" class="filters">
+
+                                    <td>14</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td></td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-01-21</td>
+
+                                    <td>2021-01-27</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/91f1eecb01ae8b04eb31e0c6df3106a2.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="18" data-name="18" onclick="view(18)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=18" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',18)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-17" class="filters">
+
+                                    <td>15</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td></td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-01-14</td>
+
+                                    <td>2021-01-20</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/6a6c64986196c18980c14031d3727d53.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="17" data-name="17" onclick="view(17)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=17" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',17)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-16" class="filters">
+
+                                    <td>16</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td></td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>0000-00-00</td>
+
+                                    <td>2021-01-28</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/0c891d7f6c0aed84acc1318b111cd3b8.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="16" data-name="16" onclick="view(16)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=16" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',16)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-15" class="filters">
+
+                                    <td>17</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td></td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-01-28</td>
+
+                                    <td>2021-01-30</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/129d8cc11403c13f4531021dfc2b12de.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="15" data-name="15" onclick="view(15)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=15" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',15)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-14" class="filters">
+
+                                    <td>18</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td></td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>2021-01-28</td>
+
+                                    <td>2021-01-31</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/256cc97ed2b1e2a5da92bf56a0206352.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="14" data-name="14" onclick="view(14)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=14" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',14)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-13" class="filters">
+
+                                    <td>19</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>slash one class</td>
+
+                                    <td></td>
+
+                                    <td>2021-01-20</td>
+
+                                    <td>2021-01-30</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/e05442c76cd765e2741ab36ef9d5784a.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="13" data-name="13" onclick="view(13)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=13" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',13)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-12" class="filters">
+
+                                    <td>20</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td></td>
+
+                                    <td>2021-01-27</td>
+
+                                    <td>2021-01-30</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/39c70d99f11d6eb538cc1ee530277b3d.jpg" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="12" data-name="12" onclick="view(12)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=12" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',12)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-11" class="filters">
+
+                                    <td>21</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td></td>
+
+                                    <td>0000-00-00</td>
+
+                                    <td>2021-01-27</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/d64d93066bc7dbe472d56ebb08351070.xlsx" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="11" data-name="11" onclick="view(11)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=11" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',11)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-10" class="filters">
+
+                                    <td>22</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>0000-00-00</td>
+
+                                    <td>2021-01-27</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/9c9f35aa2ff9657a74a0114ce0e3937d.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="10" data-name="10" onclick="view(10)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=10" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',10)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-9" class="filters">
+
+                                    <td>23</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>slash one class</td>
+
+                                    <td>Slash Technology</td>
+
+                                    <td>0000-00-00</td>
+
+                                    <td>2021-01-08</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/fb18ff70ea2e0486cec9aa6fb9668ea0.xlsx" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="9" data-name="9" onclick="view(9)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=9" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',9)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-5" class="filters">
+
+                                    <td>24</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>test subtyp</td>
+
+                                    <td>7th class</td>
+
+                                    <td></td>
+
+                                    <td>0000-00-00</td>
+
+                                    <td>2021-01-20</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/ebe240db18a61003a4f098be3b6e8e7a.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="5" data-name="5" onclick="view(5)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=5" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',5)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                                <tr id="del-4" class="filters">
+
+                                    <td>25</td>
+
+                                    <td>Slash Training Provider</td>
+
+                                    <td>slash one</td>
+
+                                    <td>slash one class</td>
+
+                                    <td></td>
+
+                                    <td>0000-00-00</td>
+
+                                    <td>2021-01-24</td>
+
+                                    <td>
+                                        <a href="http://localhost/digilims/uploads/attendance/attachment_one/d2e3f3bd7b79d6d20da5bfc3f8365062.png" download class="btn btn-sm btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+
+                                        
+                                    </td>
+
+                                    <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal" data-id="4" data-name="4" onclick="view(4)"  class="btn btn-primary btn-sm preview_product"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                      
+                                      <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                  </div>
+                                                  <div class="modal-body " id="personDetails">
+                                              
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+
+                                         
+                                        <a href="facilitator-create-attendance?id=4" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
+                                         
+                                        <a href="javascript:;" class="btn btn-danger btn-sm" style="margin:5px 0 0"onclick="deleterecord('attendance&behalf','id',4)"><i class="fa fa-trash"></i></a>
+                                           
+
+                                    </td>
+
+                                </tr>
+
+                                
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script>
+    function view(){
+
+        debugger;
+  
+  		$("#exampleModal").modal({
+  			keyboard: true,
+  			backdrop: "static",
+  			show: false,
+  
+  		}).on("show.bs.modal", function(event){
+  		  var button = $(event.relatedTarget); // button the triggered modal
+  			var id = button.data("id"); //data-id of button which is equal to id (primary key) of person
+            var company_name = $(event.relatedTarget).closest("tr").find("td:eq(1)").text(); 
+  			var learnership_nm = $(event.relatedTarget).closest("tr").find("td:eq(2)").text(); 
+            var learner_nm = $(event.relatedTarget).closest("tr").find("td:eq(3)").text(); 
+            var facilitator_name = $(event.relatedTarget).closest("tr").find("td:eq(4)").text(); 
+  			var class_name = $(event.relatedTarget).closest("tr").find("td:eq(5)").text(); 
+              var year = $(event.relatedTarget).closest("tr").find("td:eq(6)").text();
+            //   var week  = $(event.relatedTarget).closest("tr").find("td:eq(7)").text();
+          
+            
+            var src = [];
+
+            $(event.relatedTarget).closest("tr").find("td:eq(15) div").each(function(){
+               src.push($(this).find("img").attr("src"));
+            });
+            var attchedImage;
+            if(src.length > 1){
+                for(var i=0; i<src.length; i++){
+                    attchedImage = i===0 ? 
+                    '<img width="50" src="'+ src[i] +'" / > ':
+                     attchedImage + '<img width="50" src="'+ src[i] +'" / > ';                   
+                }
+            }
+            else{
+                 attchedImage = '<img width="50" src="'+ src[0] +'" / > ';
+            }
+  			//displays values to modal
+              $(this).find("#personDetails").html($("<div class=row><div class=col-sm-6>Training Provider : " + company_name + 
+              "</div><div class=col-sm-6>Learnership Sub Type : " + learnership_nm + 
+              "</div><div class=col-sm-6>ClassName : " + learner_nm + 
+              "</div><div class=col-sm-6>Facilitator  : " + facilitator_name + 
+              "</div><div class=col-sm-6>Year  : " + class_name + 
+              "</div><div class=col-sm-6>Week Ending Date  : " + year + 
+           
+            
+              
+                 
+                 "</div></div>"))
+  		}).on("hide.bs.modal", function (event) {
+			$(this).find("#personDetails").html("");
+		});
+    }
+</script>
+
+            <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left text-primary">
+                <p class="mb-2 mb-md-0">Powered By Digilims</p>
+            </div>
+            <div class="col-md-6 text-center text-md-right text-gray-400">
+              
+            </div>
+        </div>
+    </div>
+</footer>        </div>
+    </div>
+
+
+    
+    <script src="http://localhost/digilims/assets/admin/cloudfront/vendor/jquery/jquery.min.js"></script><script src="http://localhost/digilims/assets/admin/cloudfront/vendor/popper.js/umd/popper.min.js"> </script><script src="http://localhost/digilims/assets/admin/cloudfront/vendor/bootstrap/js/bootstrap.min.js"></script><script src="http://localhost/digilims/assets/admin/cloudfront/vendor/jquery.cookie/jquery.cookie.js"> </script><script src="http://localhost/digilims/assets/admin/jsdelivr/js.cookie.min.js"></script><script src="http://localhost/digilims/assets/admin/cloudfront/js/front.js"></script><script src="http://localhost/digilims/assets/admin/sweetalert/sweetalert.js"></script><script src="http://localhost/digilims/assets/admin/sweetalert/sweetalert.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script><script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script><script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script><script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script><script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.bootstrap4.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script><script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script><script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script><script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.colVis.min.js"></script><script>
+
+			$(document).ready(function() {
+
+				var table=$('.table').DataTable( {
+	
+					dom: 'Bfrtip',
+					columnDefs: [  
+						{
+							'searchable': false,
+							'orderable': false,
+							'targets': 0
+						},
+					],
+					order: [[0, 'asc']] ,
+	
+	
+					buttons: [
+	
+					{
+	
+					  extend: 'pdfHtml5',
+	
+					  orientation: 'landscape',//landscape give you more space
+	
+					  pageSize: 'A0',//A0 is the largest A5 smallest(A0,A1,A2,A3,legal,A4,A5,letter))
+	
+					},
+	
+						 'csv', 'excel', 'print' ,'colvis'
+	
+					]
+	
+				} );
+	
+				$('.table').addClass('nowrap')
+				 table.on('order.dt search.dt', function () {
+					table.column(0, { search: 'applied', order: 'applied' }).nodes().each(function (cell, i) {
+						cell.innerHTML = i + 1;
+						 table.cell(cell).invalidate('dom');
+					});
+				}).draw();
+	
+			} );
+	
+			
+	
+				
+	
+				</script><script>
+
+	        function deleterecord(tablename,columnname,id){ 
+
+				    swal({
+
+				        title: "Are you sure?",
+
+				        text: "Delete",
+
+				        type: "warning",
+
+				        showCancelButton: true,
+
+				        confirmButtonClass: "btn-danger",
+
+				        confirmButtonText: "Yes, delete it!",
+
+				        cancelButtonText: "No, cancel it!",
+
+				        closeOnConfirm: false,
+
+				        closeOnCancel: false
+
+				    }, 
+
+				    function (isConfirm) {
+
+				        if (isConfirm) {
+
+				            $.ajax({
+
+				                type:"GET",
+
+				                url: "Faciltator-deletedata?table="+tablename+"&behalf="+columnname+"&data="+id,
+
+				                success : function(data){
+
+				                    swal("Deleted!", "Record Delete Successfully.", "success");
+
+				                    $("#del-"+id).remove();
+
+				                },
+
+				                error : function(jqXHR, textStatus, errorThrown){
+
+				                    swal("Error deleting!", "Please try again", "error");
+
+				                }
+
+				            });
+
+				        } else {
+
+				          swal("Cancelled", "Your imaginary file is safe :)", "error");
+
+				        }
+
+				    });    
+
+			}
+
+		    </script><script>
+
+			function deleterecord(tablename,columnname,id){ 
+
+				swal({
+
+					title: "Are you sure?",
+
+					text: "Delete",
+
+					type: "warning",
+
+					showCancelButton: true,
+
+					confirmButtonClass: "btn-danger",
+
+					confirmButtonText: "Yes, delete it!",
+
+					cancelButtonText: "No, cancel it!",
+
+					closeOnConfirm: false,
+
+					closeOnCancel: false
+
+				}, 
+
+				function (isConfirm) {
+
+					if (isConfirm) {
+
+						$.ajax({
+
+							type:"GET",
+
+							url: "faciltator/deletedata?table="+tablename+"&behalf="+columnname+"&data="+id,
+
+							success : function(data){
+
+								swal("Deleted!", "Record Delete Successfully.", "success");
+
+								$("#del-"+id).remove();
+
+							},
+
+							error : function(jqXHR, textStatus, errorThrown){
+
+								swal("Error deleting!", "Please try again", "error");
+
+							}
+
+						});
+
+					} else {
+
+					  swal("Cancelled", "Your imaginary file is safe :)", "error");
+
+					}
+
+				});    
+
+			}
+
+			</script>    
+
+</body>
+
+</html>
